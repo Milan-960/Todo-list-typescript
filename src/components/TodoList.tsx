@@ -42,6 +42,7 @@ const TodoList: React.FC = () => {
     <div>
       <h1>Todo List</h1>
       <TodoForm handleAddTodo={handleAddTodo} />
+
       <TodoListView
         todos={todos}
         handleDeleteTodo={handleDeleteTodo}
