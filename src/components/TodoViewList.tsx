@@ -1,18 +1,7 @@
 import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
-interface TodoListViewProps {
-  todos: Todo[];
-  handleDeleteTodo: (id: number) => void;
-  handleEditTodo: (id: number, task: string) => void;
-  handleToggleCompleted: (id: number) => void;
-}
-
-interface Todo {
-  id: number;
-  task: string;
-  completed: boolean;
-}
+import { TodoListViewProps } from "../custom/Todo";
 
 const TodoListView: React.FC<TodoListViewProps> = ({
   todos,
