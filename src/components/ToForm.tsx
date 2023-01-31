@@ -1,9 +1,7 @@
 import { useState } from "react";
 import useSound from "use-sound";
 
-interface TodoFormProps {
-  handleAddTodo: (task: string) => void;
-}
+import { TodoFormProps } from "../custom/Todo-Form";
 
 export const TodoForm: React.FC<TodoFormProps> = ({ handleAddTodo }) => {
   const [task, setTask] = useState("");
